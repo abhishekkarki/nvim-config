@@ -172,11 +172,3 @@ them, they're one plugin file each:
 - **trouble.nvim** — a dedicated diagnostics/quickfix list UI. `<leader>e`
   and `[d`/`]d` cover the common case without it.
 
-## Should you use this at work too?
-
-Yes, with one caveat: this config has no repo of its own yet (`~/.config` here
-isn't a git repository). Before relying on it across machines, `git init` this
-directory (or just the `nvim/` folder) and commit it, including
-`lazy-lock.json` — that's what makes a second machine reproduce the exact
-same plugin versions instead of drifting. Without that, "set it up at work"
-means manually re-copying files instead of `git clone && nvim`.
